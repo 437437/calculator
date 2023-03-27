@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+  <style>
+    button
+    {
+        width: 50px;
+        height: 50px;
+        background-color: aliceblue;
+    }
+  </style>
+	<title>mihon</title>
+</head>
+<body>
+<div class="wrapper">
+    <h2 id="header">電卓</h2>
+    <div id="calc">
+      <div>
+        <input readonly id="result" type="text" value="0">
+        <button onclick="c_click()">C</button>
+      </div>
+      <div>
+        <button onclick="num_click(this.innerHTML)">7</button>
+        <button onclick="num_click(this.innerHTML)">8</button>
+        <button onclick="num_click(this.innerHTML)">9</button>
+        <button onclick="ope_click(this.innerHTML)">÷</button>
+        <button onclick="ope_click(this.innerHTML)">^</button>
+      </div>
+      <div>
+        <button onclick="num_click(this.innerHTML)">4</button>
+        <button onclick="num_click(this.innerHTML)">5</button>
+        <button onclick="num_click(this.innerHTML)">6</button>
+        <button onclick="ope_click(this.innerHTML)">×</button>
+        <button onclick="ope_click(this.innerHTML)">√</button>
+      </div>
+      <div>
+        <button onclick="num_click(this.innerHTML)">1</button>
+        <button onclick="num_click(this.innerHTML)">2</button>
+        <button onclick="num_click(this.innerHTML)">3</button>
+        <button onclick="ope_click(this.innerHTML)">-</button>
+      </div>
+      <div>
+        <button onclick="num_click(this.innerHTML)">0</button>
+        <button onclick="num_click(this.innerHTML)">.</button>
+        <button onclick="equal_click()">=</button>
+        <button onclick="ope_click(this.innerHTML)">+</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="mihon.js"></script>
